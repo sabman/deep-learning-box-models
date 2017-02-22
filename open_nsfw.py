@@ -19,7 +19,7 @@ from keras.preprocessing import image
 import keras.backend as K
 from keras.utils.layer_utils import convert_all_kernels_in_model
 from keras.utils.data_utils import get_file
-from imagenet_utils import preprocess_input
+from deep_learning_models.imagenet_utils import preprocess_input
 
 
 TH_WEIGHTS_PATH = 'https://dl.dropboxusercontent.com/u/3215373/open_nsfw_weights_th_dim_ordering_th_kernels.h5'
