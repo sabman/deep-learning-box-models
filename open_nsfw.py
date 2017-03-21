@@ -22,10 +22,10 @@ from keras.utils.data_utils import get_file
 from deep_learning_models.imagenet_utils import preprocess_input
 
 
-TH_WEIGHTS_PATH = 'https://dl.dropboxusercontent.com/u/3215373/open_nsfw_weights_th_dim_ordering_th_kernels.h5'
-TF_WEIGHTS_PATH = 'https://dl.dropboxusercontent.com/u/3215373/open_nsfw_weights_tf_dim_ordering_tf_kernels.h5'
-TH_WEIGHTS_PATH_NO_TOP = 'https://dl.dropboxusercontent.com/u/3215373/open_nsfw_weights_th_dim_ordering_th_kernels_notop.h5'
-TF_WEIGHTS_PATH_NO_TOP = 'https://dl.dropboxusercontent.com/u/3215373/open_nsfw_weights_tf_dim_ordering_tf_kernels_notop.h5'
+TH_WEIGHTS_PATH = 'https://www.dropbox.com/s/aotg595icbhxf7r/open_nsfw_weights_th_dim_ordering_th_kernels.h5'
+TF_WEIGHTS_PATH = 'https://www.dropbox.com/s/aotg595icbhxf7r/open_nsfw_weights_th_dim_ordering_th_kernels.h5'
+TH_WEIGHTS_PATH_NO_TOP = 'https://www.dropbox.com/s/aotg595icbhxf7r/open_nsfw_weights_th_dim_ordering_th_kernels_notop.h5'
+TF_WEIGHTS_PATH_NO_TOP = 'https://www.dropbox.com/s/aotg595icbhxf7r/open_nsfw_weights_th_dim_ordering_th_kernels_notop.h5'
 
 
 def identity_block(input_tensor, kernel_size, filters, stage, block):
