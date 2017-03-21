@@ -23,9 +23,9 @@ from deep_learning_models.imagenet_utils import preprocess_input
 
 
 TH_WEIGHTS_PATH = 'https://www.dropbox.com/s/aotg595icbhxf7r/open_nsfw_weights_th_dim_ordering_th_kernels.h5'
-TF_WEIGHTS_PATH = 'https://www.dropbox.com/s/aotg595icbhxf7r/open_nsfw_weights_th_dim_ordering_th_kernels.h5'
+TF_WEIGHTS_PATH = 'https://www.dropbox.com/s/aotg595icbhxf7r/open_nsfw_weights_tf_dim_ordering_tf_kernels.h5'
 TH_WEIGHTS_PATH_NO_TOP = 'https://www.dropbox.com/s/aotg595icbhxf7r/open_nsfw_weights_th_dim_ordering_th_kernels_notop.h5'
-TF_WEIGHTS_PATH_NO_TOP = 'https://www.dropbox.com/s/aotg595icbhxf7r/open_nsfw_weights_th_dim_ordering_th_kernels_notop.h5'
+TF_WEIGHTS_PATH_NO_TOP = 'https://www.dropbox.com/s/aotg595icbhxf7r/open_nsfw_weights_tf_dim_ordering_tf_kernels_notop.h5'
 
 
 def identity_block(input_tensor, kernel_size, filters, stage, block):
@@ -176,7 +176,7 @@ def OpenNsfw(include_top=True, weights='yahoo', input_tensor=None):
                 weights_path = get_file('open_nsfw_weights_th_dim_ordering_th_kernels.h5',
                                         TH_WEIGHTS_PATH,
                                         cache_subdir='models',
-                                        md5_hash='9b3e96285fcd19c78b2eb10c0cbc5573')
+                                        md5_hash='9cf9d4413b656cc12f62491745ebc901')
             else:
                 weights_path = get_file('open_nsfw_weights_th_dim_ordering_th_kernels_notop.h5',
                                         TH_WEIGHTS_PATH_NO_TOP,
@@ -198,12 +198,12 @@ def OpenNsfw(include_top=True, weights='yahoo', input_tensor=None):
                 weights_path = get_file('open_nsfw_weights_tf_dim_ordering_tf_kernels.h5',
                                         TF_WEIGHTS_PATH,
                                         cache_subdir='models',
-                                        md5_hash='0a9b5476c9a972883490325977575f64')
+                                        md5_hash='9cf9d4413b656cc12f62491745ebc901')
             else:
                 weights_path = get_file('open_nsfw_weights_tf_dim_ordering_tf_kernels_notop.h5',
                                         TF_WEIGHTS_PATH_NO_TOP,
                                         cache_subdir='models',
-                                        md5_hash='0fc9e68678296e024709dda4dcd1f4e8')
+                                        md5_hash='9cf9d4413b656cc12f62491745ebc901')
             model.load_weights(weights_path)
             if K.backend() == 'theano':
                 convert_all_kernels_in_model(model)
