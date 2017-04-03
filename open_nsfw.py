@@ -21,12 +21,10 @@ from keras.utils.layer_utils import convert_all_kernels_in_model
 from keras.utils.data_utils import get_file
 from deep_learning_models.imagenet_utils import preprocess_input
 
-
-TH_WEIGHTS_PATH = 'https://www.dropbox.com/s/aotg595icbhxf7r/open_nsfw_weights_th_dim_ordering_th_kernels.h5'
-TF_WEIGHTS_PATH = 'https://www.dropbox.com/s/aotg595icbhxf7r/open_nsfw_weights_tf_dim_ordering_tf_kernels.h5'
-TH_WEIGHTS_PATH_NO_TOP = 'https://www.dropbox.com/s/aotg595icbhxf7r/open_nsfw_weights_th_dim_ordering_th_kernels_notop.h5'
-TF_WEIGHTS_PATH_NO_TOP = 'https://www.dropbox.com/s/aotg595icbhxf7r/open_nsfw_weights_tf_dim_ordering_tf_kernels_notop.h5'
-
+TH_WEIGHTS_PATH = 'https://cl.ly/290f1k0f0n0C/open_nsfw_weights_th_dim_ordering_th_kernels.h5'
+TF_WEIGHTS_PATH = 'https://cl.ly/3g2R2w3U1M28/open_nsfw_weights_tf_dim_ordering_tf_kernels.h5'
+TH_WEIGHTS_PATH_NO_TOP = 'https://cl.ly/423k200d0t2P/open_nsfw_weights_th_dim_ordering_th_kernels_notop.h5'
+TF_WEIGHTS_PATH_NO_TOP = 'https://cl.ly/2W3n1p1A0F2T/open_nsfw_weights_tf_dim_ordering_tf_kernels_notop.h5'
 
 def identity_block(input_tensor, kernel_size, filters, stage, block):
     '''The identity_block is the block that has no conv layer at shortcut
